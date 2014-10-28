@@ -1,0 +1,68 @@
+Option --layer-def (Layer definition file) cannot be changed
+pdir: .
+self.save_path:  ./
+=========================
+Importing _ConvNet C++ module
+============================================
+learning rate scale     :  1
+Reset Momentum          :  False
+Image Rotation & Scaling:  False
+============================================
+=========================
+Training ConvNet
+Adaptive Drop Training                              : False [DEFAULT]
+Check gradients and quit?                           : 0     [DEFAULT]
+Compress checkpoints?                               : 0     [DEFAULT]
+Conserve GPU memory (slower)?                       : 0     [DEFAULT]
+Convert given conv layers to unshared local         :       
+Cropped DP: crop border size                        : 4     [DEFAULT]
+Cropped DP: logreg layer name (for --multiview-test):       [DEFAULT]
+Cropped DP: test on multiple patches?               : 0     [DEFAULT]
+Data batch range: testing                           : 5-5   
+Data batch range: training                          : 1-4   
+Data path                                           : ../data/cifar-10/ 
+Data provider                                       : cifar 
+Enable image rotation and scaling transformation    : False [DEFAULT]
+GPU override                                        : -1    [DEFAULT]
+Image Size                                          : 0     [DEFAULT]
+Layer definition file                               : ./layers-80sec.cfg 
+Layer parameter file                                : ./layer-params-80sec.cfg 
+Learning Rate Scale Factor                          : 1     [DEFAULT]
+Load file                                           : ./checkpoints 
+Maximum save file size (MB)                         : 0     [DEFAULT]
+Minibatch size                                      : 128   [DEFAULT]
+Model File Name                                     :       [DEFAULT]
+Number of GPUs                                      : 1     [DEFAULT]
+Number of channels in image                         : 3     [DEFAULT]
+Number of epochs                                    : 150   
+Reset layer momentum                                : False [DEFAULT]
+Save path                                           : ./    
+Test and quit?                                      : 0     [DEFAULT]
+Test on one batch at a time?                        : 1     [DEFAULT]
+Testing frequency                                   : 15    
+Unshare weight matrices in given layers             :       
+Whether filp training image                         : True  [DEFAULT]
+=========================
+Running on CUDA device(s) -2
+Current time: Fri Oct 10 14:25:23 2014
+Saving checkpoints to ./checkpoints
+=========================
+150.3... logprob:  0.085129, 0.020700 (2.287 sec)
+150.4... logprob:  0.094064, 0.022100 
+======================Test output======================
+logprob:  1.088916, 0.244400 
+------------------------------------------------------- 
+Layer 'conv1' weights[0]: 7.718548e-02 [3.402017e-05] 
+Layer 'conv1' biases: 2.491616e-02 [1.645081e-06] 
+Layer 'conv2' weights[0]: 2.400410e-02 [1.684973e-05] 
+Layer 'conv2' biases: 2.142951e-02 [8.008980e-07] 
+Layer 'conv3' weights[0]: 2.224576e-02 [2.082103e-05] 
+Layer 'conv3' biases: 4.046725e-02 [7.788643e-07] 
+Layer 'fc128' weights[0]: 8.353603e-03 [2.631676e-05] 
+Layer 'fc128' biases: 7.298771e-02 [4.760535e-06] 
+Layer 'fc10' weights[0]: 5.767719e-02 [5.771466e-05] 
+Layer 'fc10' biases: 5.326973e-01 [2.858218e-05] 
+-------------------------------------------------------
+Saved checkpoint to ./checkpoints
+======================================================= (2.868 sec)
+151.1... logprob:  0.087578, 0.020500 (2.061 sec)

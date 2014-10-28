@@ -1,0 +1,19 @@
+pdir: .
+self.save_path:  ./
+=========================
+Importing _ConvNet C++ module
+batch 6: ({'logprob': [11072.753658294678, 2506.0]}, 10000)
+
+======================Test output======================
+logprob:  1.107275, 0.250600 
+------------------------------------------------------- 
+Layer 'conv1' weights[0]: 7.718548e-02 [3.402017e-05] 
+Layer 'conv1' biases: 2.491616e-02 [1.645081e-06] 
+Layer 'conv2' weights[0]: 2.400410e-02 [1.684973e-05] 
+Layer 'conv2' biases: 2.142951e-02 [8.008980e-07] 
+Layer 'conv3' weights[0]: 2.224576e-02 [2.082103e-05] 
+Layer 'conv3' biases: 4.046725e-02 [7.788643e-07] 
+Layer 'fc128' weights[0]: 8.353603e-03 [2.631676e-05] 
+Layer 'fc128' biases: 7.298771e-02 [4.760535e-06] 
+Layer 'fc10' weights[0]: 5.767719e-02 [5.771466e-05] 
+Layer 'fc10' biases: 5.326973e-01 [2.858218e-05] 

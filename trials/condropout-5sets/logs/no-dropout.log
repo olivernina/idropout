@@ -1,0 +1,6 @@
+CUDA error at /usr/local/cuda/samples/common/inc/helper_cuda.h:1032 code=38(cudaErrorNoDevice) "cudaGetDeviceCount(&device_count)" 
+Option --layer-def (Layer definition file) cannot be changed
+pdir: .
+self.save_path:  ./
+=========================
+Importing _ConvNet C++ module

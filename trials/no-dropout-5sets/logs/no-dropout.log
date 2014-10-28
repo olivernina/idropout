@@ -1,0 +1,76 @@
+Option --layer-def (Layer definition file) cannot be changed
+pdir: .
+self.save_path:  ./
+=========================
+Importing _ConvNet C++ module
+============================================
+learning rate scale     :  1
+Reset Momentum          :  False
+Image Rotation & Scaling:  False
+============================================
+=========================
+Training ConvNet
+Adaptive Drop Training                              : False [DEFAULT]
+Check gradients and quit?                           : 0     [DEFAULT]
+Compress checkpoints?                               : 0     [DEFAULT]
+Conserve GPU memory (slower)?                       : 1     [DEFAULT]
+Convert given conv layers to unshared local         :       
+Cropped DP: crop border size                        : 4     [DEFAULT]
+Cropped DP: logreg layer name (for --multiview-test):       [DEFAULT]
+Cropped DP: test on multiple patches?               : 0     [DEFAULT]
+Data batch range: testing                           : 6-6   
+Data batch range: training                          : 1-5   
+Data path                                           : ../data/cifar-10/ 
+Data provider                                       : cifar 
+Enable image rotation and scaling transformation    : False [DEFAULT]
+GPU override                                        : -1    [DEFAULT]
+Image Size                                          : 0     [DEFAULT]
+Layer definition file                               : ./layers-80sec.cfg 
+Layer parameter file                                : ./layer-params-80sec.cfg 
+Learning Rate Scale Factor                          : 1     [DEFAULT]
+Load file                                           : ./checkpoints/149.1 
+Maximum save file size (MB)                         : 0     [DEFAULT]
+Minibatch size                                      : 128   [DEFAULT]
+Model File Name                                     :       [DEFAULT]
+Number of GPUs                                      : 1     [DEFAULT]
+Number of channels in image                         : 3     [DEFAULT]
+Number of epochs                                    : 150   
+Reset layer momentum                                : False [DEFAULT]
+Save path                                           : ./    
+Test and quit?                                      : 0     [DEFAULT]
+Test on one batch at a time?                        : 1     [DEFAULT]
+Testing frequency                                   : 15    
+Unshare weight matrices in given layers             :       
+Whether filp training image                         : True  [DEFAULT]
+=========================
+Running on CUDA device(s) -2
+Current time: Fri Oct 10 14:23:18 2014
+Saving checkpoints to ./checkpoints
+=========================
+149.2... logprob:  0.125781, 0.038600 (2.453 sec)
+149.3... logprob:  0.120640, 0.037600 (2.229 sec)
+149.4... logprob:  0.141210, 0.044500 (2.229 sec)
+149.5... logprob:  0.114998, 0.032400 (2.229 sec)
+150.1... logprob:  0.120621, 0.035500 (2.229 sec)
+150.2... logprob:  0.116038, 0.032000 (2.228 sec)
+150.3... logprob:  0.120136, 0.034100 (2.229 sec)
+150.4... logprob:  0.140673, 0.044200 (2.229 sec)
+150.5... logprob:  0.114704, 0.031500 
+======================Test output======================
+logprob:  0.990693, 0.237000 
+------------------------------------------------------- 
+Layer 'conv1' weights[0]: 7.996522e-02 [4.029744e-05] 
+Layer 'conv1' biases: 3.152477e-02 [1.656593e-06] 
+Layer 'conv2' weights[0]: 2.549663e-02 [1.666392e-05] 
+Layer 'conv2' biases: 2.259829e-02 [7.143085e-07] 
+Layer 'conv3' weights[0]: 2.282454e-02 [2.429797e-05] 
+Layer 'conv3' biases: 4.495500e-02 [8.873085e-07] 
+Layer 'fc128' weights[0]: 8.655827e-03 [3.024286e-05] 
+Layer 'fc128' biases: 8.833764e-02 [5.444657e-06] 
+Layer 'fc10' weights[0]: 6.008699e-02 [6.159279e-05] 
+Layer 'fc10' biases: 5.640402e-01 [2.726376e-05] 
+-------------------------------------------------------
+Saved checkpoint to ./checkpoints
+======================================================= (3.040 sec)
+epoch_cost: 0
+151.1... logprob:  0.119348, 0.036900 (2.230 sec)

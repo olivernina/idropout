@@ -1,0 +1,5 @@
+Initialized data layer 'data', producing 3072 outputs
+Initialized data layer 'labels', producing 1 outputs
+Initialized convolutional layer 'conv1', producing 32x32 32-channel output
+Initialized max-pooling layer 'pool1', producing 16x16 32-channel output
+Layer 'fc1282': required parameter 'outputs' missing

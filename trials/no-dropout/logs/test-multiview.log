@@ -1,0 +1,20 @@
+Option --crop-border (Cropped DP: crop border size) cannot be changed
+pdir: .
+self.save_path:  ./
+=========================
+Importing _ConvNet C++ module
+batch 6: ({'logprob': [39552.30152511597, 8308.0]}, 10000)
+
+======================Test output======================
+logprob:  3.955230, 0.830800 
+------------------------------------------------------- 
+Layer 'conv1' weights[0]: 7.881835e-02 [2.970113e-05] 
+Layer 'conv1' biases: 2.724557e-02 [1.737406e-06] 
+Layer 'conv2' weights[0]: 2.506815e-02 [1.636736e-05] 
+Layer 'conv2' biases: 1.984082e-02 [5.798917e-07] 
+Layer 'conv3' weights[0]: 2.251817e-02 [2.280095e-05] 
+Layer 'conv3' biases: 5.021805e-02 [7.562803e-07] 
+Layer 'fc128' weights[0]: 8.470169e-03 [2.754896e-05] 
+Layer 'fc128' biases: 8.310697e-02 [4.557704e-06] 
+Layer 'fc10' weights[0]: 6.035910e-02 [5.859738e-05] 
+Layer 'fc10' biases: 5.061666e-01 [2.170671e-05] 
